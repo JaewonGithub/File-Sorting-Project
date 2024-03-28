@@ -1,15 +1,11 @@
-# %%
 import os, shutil
 
-# %%
 #The path of the file that needs to be sorted
 path = r"C:/Users/wodnj/Desktop/FileSortingTest/"
 
-# %%
 #Checks for the list of the files in the path folder that we will be sorting within
 os.listdir(path)
 
-# %%
 #Create folder for each different categories of files if not already existing
 #Here, since there are 7 categories of the files I would like to sort,
 #I have created seven different folders for them since they don't already exist.
@@ -22,7 +18,6 @@ for count in range(7):
         print (path + folder_names[count])
     
 
-# %%
 #For each of the file, use shutil library to move the file to the corresponding categorized folder
 #Here, All different types of files including xlsx,jpg,docx,png,csv,txt,pdf are sorted into their 
 #corresponding folders.
@@ -47,7 +42,6 @@ for file in list_of_files :
     else:
         print("Not supported type of file")
 
-# %%
 #Checks to make sure if any type of file is still not relocated
 #Since the output is all folders, we have successfully relocated all of our files to corresponding folders.
 os.listdir(path)
